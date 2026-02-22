@@ -50,3 +50,30 @@ func combinationSum260104(candidates []int, target int) [][]int {
 	dfs(0)
 	return ans
 }
+
+func combinationSum260221(candidates []int, target int) [][]int {
+	ans := [][]int{}
+	curr := []int{}
+	n := len(candidates)
+	var dfs func(index, left int)
+	dfs = func(index, left int) {
+		// fmt.Println(index, left, curr)
+		if left == 0 {
+			tmp := make([]int, len(curr))
+			copy(tmp, curr)
+			ans = append(ans, tmp)
+			return
+		}
+		if index == n || left < 0 {
+			return
+		}
+		for i := index; i < n; i++ {
+			curr = append(curr, candidates[i])
+			dfs(i, left-candidates[i])
+			curr = curr[:len(curr)-1]
+		}
+	}
+
+	dfs(0, target)
+	return ans
+}
