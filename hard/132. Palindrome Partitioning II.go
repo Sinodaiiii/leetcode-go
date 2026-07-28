@@ -43,5 +43,4 @@ func minCut(s string) int {
 		}
 		queue = queue[length:]
 	}
-	return curr
 }

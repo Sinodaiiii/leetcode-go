@@ -5,7 +5,7 @@ type LRUCache struct {
 	kv    map[int]int
 }
 
-func Constructor(capacity int) LRUCache {
+func Constructor146(capacity int) LRUCache {
 	lru := LRUCache{make([]int, capacity), make(map[int]int)}
 	for i := range lru.cache {
 		lru.cache[i] = -1

@@ -9,7 +9,7 @@ func firstMissingPositive(nums []int) int {
 		if nums[i] >= 0 && nums[i] < n {
 			curr := nums[i]
 			for curr >= 0 && curr < n {
-				nums[curr], curr = math.MinInt32-100, nums[curr]
+				nums[curr], curr = math.MinInt, nums[curr]
 			}
 		}
 	}

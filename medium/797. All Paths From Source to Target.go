@@ -1,3 +1,5 @@
+package medium
+
 func allPathsSourceTarget(graph [][]int) [][]int {
     n := len(graph)
     path := make([]int, 0)

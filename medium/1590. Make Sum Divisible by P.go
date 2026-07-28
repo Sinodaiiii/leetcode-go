@@ -3,7 +3,7 @@ package medium
 import "math"
 
 func minSubarray(nums []int, p int) int {
-	ans := math.MaxInt64 / 2
+	ans := math.MaxInt / 2
 	sum := 0
 	for _, num := range nums {
 		sum = (sum + num) % p
@@ -21,7 +21,7 @@ func minSubarray(nums []int, p int) int {
 		}
 		dict[sum] = index
 	}
-	if ans == math.MaxInt64/2 || ans == len(nums) {
+	if ans == math.MaxInt/2 || ans == len(nums) {
 		return -1
 	}
 	return ans

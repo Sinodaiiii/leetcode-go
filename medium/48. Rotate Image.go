@@ -1,6 +1,6 @@
 package medium
 
-func rotate(matrix [][]int) {
+func rotate48(matrix [][]int) {
 	n := len(matrix)
 	t := (n + 1) / 2
 	k := n

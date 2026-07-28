@@ -1,10 +1,10 @@
 package medium
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+// type TreeNode struct {
+// 	Val   int
+// 	Left  *TreeNode
+// 	Right *TreeNode
+// }
 
 func subtreeWithAllDeepest(root *TreeNode) *TreeNode {
 	var getDepth func(root *TreeNode, d int) int

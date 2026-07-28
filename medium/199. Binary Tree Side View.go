@@ -1,10 +1,10 @@
 package medium
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+// type TreeNode struct {
+// 	Val   int
+// 	Left  *TreeNode
+// 	Right *TreeNode
+// }
 
 func dfs(root *TreeNode, deep int, ret []int) []int {
 	if root == nil {

@@ -6,7 +6,7 @@ func maxSubarraySum(nums []int, k int) int64 {
 	n := len(nums)
 	dp := make([]int, k)
 	for i := 0; i < k; i++ {
-		dp[i] = math.MinInt32 * 10
+		dp[i] = math.MinInt32
 	}
 	sum := 0
 	for i := 0; i < k; i++ {

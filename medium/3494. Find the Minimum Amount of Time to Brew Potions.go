@@ -11,7 +11,7 @@ func minTime(skill []int, mana []int) int64 {
 	}
 	for i := 1; i < m; i++ {
 		// fmt.Println(curr)
-		maxLength := math.MinInt64
+		maxLength := math.MinInt
 		preLength := 0
 		maxIndex := -1
 		for j := n - 1; j >= 0; j-- {
